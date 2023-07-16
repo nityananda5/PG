@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(238, 226, 226);
+    box-shadow: 2px 9px 5px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 9px 5px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 9px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+    font-family: cursive;
+}
+
+.navbar-list :hover{
+    background-color: #fff;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.nest-logo {
+    width: 70px;
+    height: 70px;
+    mix-blend-mode: multiply;
+}
+
+.navbar-register {
+    outline: 2px solid grey;
+    margin-left: 10px;
+    border-radius: 12px;
+}
+
+.navbar-sign :hover{
+    scale: 1.1;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+
+.menu-close{
+    display: none;
+}
+
+.navbar-list-mobile{
+    display: none;
+}
+
+/* Media Queries */
+
+  @media only  screen and (max-width:768px) {
+
+    .menu-close{
+        display: flex;
+    }
+    .navbar-list ,.navbar-register{
+        display: none;
+    }
+
+    .nest-logo {
+        width: 35px;
+        height: 35px;
+        mix-blend-mode: multiply;
+    }
+
+    .menu ,.close{
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar-list-mobile{
+        list-style: none;
+        font-family: cursive;
+        margin-top: 2rem;
+        line-height: 2rem;
+        background-color: rgb(11, 12, 12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5rem;
+        color: #ffffff;
+        height: 50%;
+
+    }
+
+  }  
